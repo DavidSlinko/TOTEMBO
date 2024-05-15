@@ -1,0 +1,10 @@
+{% load static %}
+<div class="container">
+    <div class="row">
+
+        {% for product in products %}
+        {% include 'components/_product_cart.html' %}
+        {% endfor %}
+
+    </div>
+</div>

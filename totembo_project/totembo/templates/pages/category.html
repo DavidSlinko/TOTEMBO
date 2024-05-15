@@ -1,0 +1,46 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block main %}
+
+<main>
+    <!-- SALES BLOCK START -->
+    <!-- <div class="sales_block">
+        <div class="d-flex text-center">
+            <div class="sales_block-first w-50">
+                <p>GET <span>20% OFF</span> FOR $200 AND MORE ORDER</p>
+            </div>
+            <div class="sales_block-second w-50">
+                <p>FREE DELIVERY WORLDWIDE</p>
+            </div>
+        </div>
+    </div> -->
+    <!-- SALES BLOCK END -->
+
+    <section class="category_products">
+
+
+
+
+
+        <!-- PRODUCTS BLOCK START -->
+        <div class="container">
+            <div class="row">
+                {% for product in products %}
+                {% include 'components/_product_cart.html' %}
+                {% endfor %}
+            </div>
+        </div>
+        <!-- PRODUCTS BLOCK END -->
+
+        <!-- PAGINATION START -->
+
+        <!-- PAGINATION END -->
+    </section>
+</main>
+
+
+{% endblock main %}

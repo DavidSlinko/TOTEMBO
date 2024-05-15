@@ -1,0 +1,43 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load totembo_tags %}
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block main %}
+
+<main>
+    <div class="content">
+      <div class="container">
+        <h2 class="content__title">Моё Избранное</h2>
+
+      </div>
+    </div>
+
+
+    <div class="content">
+      <div class="container">
+
+        <div class="content__cards list_cards">
+
+          {% for product in products %}
+          {% include 'components/_product_cart.html' %}
+          {% endfor %}
+
+        </div>
+
+
+
+
+      </div>
+    </div>
+
+
+
+
+
+
+  </main>
+
+{% endblock main %}

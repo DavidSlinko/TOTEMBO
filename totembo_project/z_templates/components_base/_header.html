@@ -1,0 +1,104 @@
+{% load static %}
+<header>
+    <!-- HEADER NAV START -->
+    <nav class="header_nav">
+        <div class="container">
+            <div class="naw_menu">
+                <a href="{% url 'index' %}" class="logo_text">TOTEMBO</a>
+                    {% include 'components/_category_header.html' %}
+
+                {% if request.user.is_authenticated %}
+                <div class="header_panel">
+                    <div class="header_panel-item">
+                        <img class="header_icon" src="{% static 'totembo/images/icons/search_icon.svg' %}" alt="">
+                    </div>
+                    <div class="header_panel-item">
+                        <a href="{% url 'logout' %}">
+                        <img class="circum" src="{% static 'totembo/images/icons/circum_login.svg' %}" alt="">
+                            </a>
+                    </div>
+                    <a href="{% url 'favorite' %}">
+                    <div class="header_panel-item">
+                        <img class="header_icon" src="{% static 'totembo/images/icons/basket_icon.svg' %}" alt="">
+                    </div>
+                        </a>
+
+
+                    <a href="{% url 'my_cart' %}">
+                    <div class="header_panel-item">
+                        <img class="header_icon" src="{% static 'totembo/images/icons/cart_96642.svg' %}" alt="">
+                    </div>
+                        </a>
+
+
+
+
+
+
+                    <div class="header_panel-item">
+                        <img class="header_icon" src="{% static 'totembo/images/icons/user_icon.svg' %}" alt="">
+                    </div>
+                    {% else %}
+                    <div class="header_panel-item">
+                        <a href="{% url 'login' %}">Вход</a>
+                    </div>
+
+                    <div class="header_panel-item">
+                        <a href="{% url 'register' %}">Регистрация</a>
+                    </div>
+                    {% endif %}
+                </div>
+                <!-- BURGER MENU START -->
+                <div class="header_lx-panel">
+                    <input type="checkbox" class="toggler">
+                    <div class="hamburger">
+                        <div></div>
+                    </div>
+                    <div class="menu">
+                        <div>
+                            <div>
+                                <ul>
+                                    <li>
+                                        <a class="header_nav-link" href=""><img src="{% static 'totembo/images/icons/basket_icon.svg' %}"
+                                                                                alt=""></a>
+                                        <a class="header_nav-link" href=""><img src="{% static 'totembo/images/icons/ru_lang_icon.svg' %}"
+                                                                                alt=""></a>
+                                    </li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Часы</a></li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Кольца</a></li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Серьги</a></li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Браслеты</a></li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Клатчи</a></li>
+                                    <li class="header_nav-item"><a class="header_nav-link" href="">Цепочки</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- BURGER MENU END -->
+            </div>
+        </div>
+
+
+    </nav>
+    <!-- HEADER NAV END -->
+
+    <!-- HEADER TEXT BLOCK START -->
+    <div class="poster">
+        <div class="container title_content">
+            <div class="row justify-content-center block_text">
+                <div class="col-12 text-content">
+                    <h1 class="header_title">Механические наручные
+                        часы Bulova 97A136</h1>
+                    <p class="header_sub-title">Все часы Bulova изготавливаются из
+                        лучших материалов, от прочной нержавеющей
+                        стали для корпусов и браслетов до высококачественной зернистой кожи для ремешков.</p>
+
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- HEADER TEXT BLOCK END -->
+
+    <!-- HEADER POSTER START -->
+</header>

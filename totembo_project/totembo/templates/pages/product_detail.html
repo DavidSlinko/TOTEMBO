@@ -1,0 +1,61 @@
+{% extends 'base.html' %}
+{% load static %}
+{% load totembo_tags %}
+{% block title %}
+{{ title }}
+{% endblock title %}
+
+{% block main %}
+
+<main>
+    <section class="product_detail">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-6">
+                    <div class="product_detail-slider">
+                        <div class="product_detail-slider_block">
+                            <img src="{{ product.get_image_product }}" alt="">
+                        </div>
+
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="product_detail-info">
+                        <h2 class="product_detail-title">{{ product.title }}</h2>
+                        <p class="product_detail-desc">{{ product.color }}</p>
+                        <p class="product_detail-price">{% get_normal_price product.price %} сум</p>
+
+                        <ul class="product_detail-characteristic">
+                            {% for p in product.parameters.all %}
+                            <li class="product_detail-characteristic_item d-flex justify-content-between">
+                                <span>{{ p.parameter }}: </span>
+                                <span>{{ p.parameter_info }}</span>
+                            </li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <p class="product_detail-guarantee">{{ product.delivery }}</p>
+                    <a href="{% url 'to_cart' product.slug 'add' %}" class="product_detail-buy_btn">В корзину</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <div class="recommended_goods">
+        <h2 class="product_detail-main-title text-center">Похожие товары</h2>
+
+        <!-- PRODUCTS BLOCK START -->
+
+        {% include 'components/_same_products.html' %}
+
+        <!-- PRODUCTS BLOCK END -->
+
+    </div>
+
+
+
+</main>
+
+{% endblock main %}

@@ -1,0 +1,247 @@
+@import url(fonts.css);
+
+.my_card_orders h3{
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0F2859;
+}
+
+
+.list_card_orders{
+  display: flex;
+  margin-top: 60px;
+   flex-direction: column;
+   gap: 40px;
+}
+
+.data_add, .price_cart{
+display:flex;
+flex-direction: column;
+align-items: center;
+gap: 10px;
+text-align: center
+}
+
+.product_price_title, .data_add{
+        font-family: 'Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #082040;
+}
+
+.quantity a img{
+    width: 15px;
+    height: 10px;
+}
+
+.total_products_price{
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin-top: 30px;
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #082040;
+}
+
+
+.total_products_price span{
+font-family: 'Medium';
+font-style: normal;
+font-weight: 500;
+font-size: 18px;
+line-height: 150%;
+color: #082040;
+}
+
+
+
+.order_btns{
+display: flex;
+justify-content: space-between;
+}
+
+
+.btn_order{
+   display: inline-block;
+  padding: 15px 15px;
+  background: #0F2859;
+  border-radius: 10px;
+  text-align: center;
+  font-family: 'Regul';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 25px;
+  line-height: 30px;
+  color: #CFDDF6;
+  margin-top: 60px;
+ }
+
+
+.content_order, .content_connect, .profile_content{
+  /* border: 1px solid red; */
+  max-width: 966px;
+  margin: 0 auto;
+  min-height: 200px;
+  cursor: pointer;
+  padding: 5px;
+}
+
+.my_orders{
+  display: flex;
+  gap: 22px;
+  align-items: center;
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 37px;
+  color: #0F2859;
+}
+
+.my_orders img{
+  transition: 0.5s;
+}
+
+.content_order .errow_down.active{
+  transform: rotate(90deg);
+  transition: 0.5s;
+}
+
+
+.list_orders{
+  display: none;
+   padding: 20px 0;
+  border: 1px solid #7787A6;
+  border-radius: 10px;
+  margin-top: 60px;
+}
+.list_orders hr:last-child{
+    display: none;
+}
+
+
+.order{
+  display: flex;
+  align-items: center;
+}
+.order_cart{
+    display: flex;
+    align-items: center;
+    padding: 10px;
+    border: 1px solid #7787A6;
+    border-radius: 10px;
+    justify-content: space-around;
+
+}
+
+.info{
+  display: flex;
+}
+
+
+.order img{
+  height: 106px;
+}
+.color_quantity{
+  display: flex;
+  gap: 30px;
+}
+.color, .quantity{
+  display: flex;
+  gap: 10px;
+  font-family: 'Medium';
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 150%;
+  color: #082040;
+}
+
+.product_title{
+  width: 355px;
+  font-family: 'Bold';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 150%;
+  color: #082040;
+  }
+  .info_order{
+    display: flex;
+    flex-direction: column;
+    gap: 19px;
+  }
+
+
+  .product_price{
+    margin: 0 49px 0 64px;
+    font-family: 'Bold';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 150%;
+    color: #082040;
+  }
+
+  .data{
+    display: flex;
+    align-items: center;
+    gap: 16px;
+  }
+  .data img{
+    height: 30px;
+  }
+  .data span{
+    font-family: 'Regul';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 150%;
+    color: #7787A6;
+  }
+
+  .content_order .list_orders.active{
+    display: flex;
+    gap: 30px;
+    flex-direction: column;
+  }
+
+  .content_connect{
+    margin-top: 80px;
+    margin-bottom: 140px;
+  }
+
+  .content_midle_text{
+    margin: 40px 0 80px 0;
+  }
+
+  .content_top_text{
+    font-family: 'Medium';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 25px;
+    line-height: 30px;
+    color: #082040;
+  }
+  .content_midle_text{
+    width: 693px;
+    font-family: 'Regul';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 24px;
+    color: #082040;
+  }
+  .list_mail{
+    display: flex;
+    gap: 35px;
+  }

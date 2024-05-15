@@ -1,0 +1,15 @@
+{% load static %}
+{% load totembo_tags %}
+{% get_info_poster as posters %}
+
+    {% for poster in posters %}
+    <div class="owl-carousel_block owl-carousel_block-bg">
+        <div class="owl-carousel_block-content">
+            <img src="{{ poster.get_image_poster }}" alt="">
+        </div>
+        <a href="" class="owl-carousel_block-hover">
+            <p class="owl-carousel_block-desc">{{ poster.title }}</p>
+        </a>
+    </div>
+    {% endfor %}
+
